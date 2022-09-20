@@ -1,7 +1,7 @@
 # Stripe-Django
 
 
-## Create items and database
+## Create database and items
 ### Create db: python manage.py migrate
 ### Create superuser: python manage.py createsuperuser
 ### Run server: python manage.py runserver
