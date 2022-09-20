@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content%}
+    <p>{{item.name}}</p>
+    <p>{{item.description}}</p>
+    <p>{{item.price}}</p>
+    <form action='/buy/{{item.id}}/' method="POST">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary">Buy</button>
+    </form>
+{% endblock %}
